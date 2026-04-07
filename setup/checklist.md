@@ -44,12 +44,13 @@ git push origin graveyard
 
 ```bash
 cd /home/ivan/nexus/{{PROJECT-NAME}}
+dotnet new gitignore
 dotnet new sln -n {{PROJECT-NAME}}
 dotnet new console -lang F# -n {{PROJECT-NAME}} -o src/{{PROJECT-NAME}}
 dotnet sln add src/{{PROJECT-NAME}}/{{PROJECT-NAME}}.fsproj
 ```
 
-Adjust project structure as needed (library vs console, test project, etc.).
+`dotnet new sln` produces a `.slnx` file. Adjust project structure as needed (library vs console, test project, etc.).
 
 ## 6. Initial commit
 

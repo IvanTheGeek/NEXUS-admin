@@ -9,4 +9,4 @@
 ## Stack
 
 - Language: F# on .NET 10.0
-- Solution: `{{PROJECT-NAME}}.sln`
+- Solution: `{{PROJECT-NAME}}.slnx`
