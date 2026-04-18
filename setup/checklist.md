@@ -20,7 +20,8 @@ cp -r /home/ivan/nexus/NEXUS-admin/templates/new-project/. /home/ivan/nexus/{{PR
 ```
 
 Update placeholders in the copied files:
-- `CLAUDE.md` — replace `{{PROJECT-NAME}}` and fill in the purpose
+- `AGENTS.md` — replace `{{PROJECT-NAME}}` and fill in the purpose; this is the generic context any AI reads
+- `CLAUDE.md` — already wired (`@AGENTS.md` + `@../AGENTS.md`); no edits needed unless adding Claude Code-specific notes
 - `.claude/settings.json` — replace `{{PROJECT-NAME}}` in the hook command
 
 ## 3. Create initial commit
