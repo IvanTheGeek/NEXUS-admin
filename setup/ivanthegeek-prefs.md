@@ -9,7 +9,7 @@ Any AI working on setup tasks should check this first.
 
 | Setting | Value | How |
 |---|---|---|
-| GRUB timeout | 1 second | `GRUB_TIMEOUT=1` in `/etc/default/grub`, then `update-grub` |
+| GRUB timeout | 1 second | `GRUB_TIMEOUT=1` in `/etc/default/grub`, then `update-grub` (applied to both local VM and OVH VPS) |
 | polkit (GUI sudo) | Passwordless for `ivan` | `/etc/polkit-1/rules.d/49-nopasswd-ivan.rules` (see below) |
 
 ### polkit nopasswd rule
