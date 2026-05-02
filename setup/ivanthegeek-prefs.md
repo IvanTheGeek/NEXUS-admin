@@ -29,6 +29,19 @@ Takes effect immediately, no reboot needed.
 
 ---
 
+## Forgejo (forgejo.ivanthegeek.com)
+
+| Item | Value |
+|---|---|
+| URL | `https://forgejo.ivanthegeek.com` |
+| SSH | port 222 |
+| Claude user token | `~/.config/forgejo-claude.token` |
+| Token scope | read/write repos, issues, PRs — use for any Forgejo API work |
+
+When a Claude session needs to call the Forgejo API, read `~/.config/forgejo-claude.token` for the Bearer token. The `claude` user has access to all orgs/repos used for AI work (FnTools, etc.).
+
+---
+
 ## In-Progress / Interrupted Work
 
 ### PXE / Network Boot
